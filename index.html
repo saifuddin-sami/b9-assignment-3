@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <!-- Daisy UI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Manrope Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .fonts-manrope {
+            font-family: Manrope;
+        }
+    </style>
+</head>
+
+<body class="fonts-manrope">
+    <header class="w-11/12 md:container  mx-auto">
+        <nav class="my-6 lg:my-12">
+            <div class="navbar bg-base-100 justify-between items-center">
+                <div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden px-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="hover:text-[#FF4240]">Home</a></li>
+                            <li><a class="hover:text-[#FF4240]">About</a></li>
+                            <li><a class="hover:text-[#FF4240]">Pages</a></li>
+                            <li><a class="hover:text-[#FF4240]">Blog</a></li>
+                            <li><a class="hover:text-[#FF4240]">Contact</a></li>      
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl md:text-3xl h-fit text-[#131318] font-extrabold px-[18px]">Hockey<span
+                            class="text-[#FF4240]">'</span>s</a>
+                </div>
+                <div class="hidden lg:flex">
+                    <ul class="flex gap-11 cursor-pointer font-bold">
+                        <li><a class="hover:text-[#FF4240]">Home</a></li>
+                        <li><a class="hover:text-[#FF4240]">About</a></li>
+                        <li><a class="hover:text-[#FF4240]">Pages</a></li>
+                        <li><a class="hover:text-[#FF4240]">Blog</a></li>
+                        <li><a class="hover:text-[#FF4240]">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex gap-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden lg:block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>                      
+                    <a class="btn h-fit font-bold px-4 py-2 lg:px-6 lg:py-4 text-[16px] lg:text-xl bg-[#FF4240] text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section>
+            <div class="carousel w-full">
+                <!-- Slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full flex flex-col gap-y-4">
+                    <div class="w-full relative">
+                        <img src="Images/1.png" alt="" class="w-full">
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 lg:bottom-8 lg:left-8 lg:translate-x-0 flex gap-3 lg:gap-4">
+                            <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none text-xl hover:opacity-70">❮</a>
+                            <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none text-xl hover:opacity-70">❯</a>
+                        </div>
+                    </div>
+                    <div class="bg-[#131318] p-4 lg:p-8 rounded-xl w-full lg:w-1/2 h-fit lg:absolute lg:bottom-8 lg:right-8">
+                        <h2 class="text-[18px] lg:text-2xl font-extrabold text-white mb-2 lg:mb-4"> Meet all the heroes from the field </h2>
+                        <p class="text-[14px] lg:text-[16px] font-medium text-[rgba(255,255,255,0.6)]"> Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full flex flex-col gap-y-4">
+                    <div class="w-full relative">
+                        <img src="Images/banner-2.png" alt="" class="w-full rounded-xl lg:rounded-2xl">
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 lg:bottom-8 lg:left-8 lg:translate-x-0 flex gap-3 lg:gap-4">
+                            <a href="#slide1" class="btn btn-circle bg-white text-[#131318] border-none text-xl hover:opacity-70">❮</a>
+                            <a href="#slide1" class="btn btn-circle bg-white text-[#131318] border-none text-xl hover:opacity-70">❯</a>
+                        </div>
+                    </div>
+                    <div class="bg-[#f9fcff] p-4 lg:p-8 rounded-xl w-full lg:w-1/2 h-fit lg:absolute lg:bottom-8 lg:right-8">
+                        <h2 class="text-[18px] lg:text-2xl font-extrabold text-[##131318] mb-2 lg:mb-4"> Meet all the heroes from the field </h2>
+                        <p class="text-[14px] lg:text-[16px] font-medium text-[rgba(19,19,24,0.6)]"> Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                    </div>
+                </div>
+              </div>
+        </section>
+    </header>
+</body>
+
+</html>
